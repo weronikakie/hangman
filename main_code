@@ -35,25 +35,7 @@ print(create_captials_list())
 #             countries_and_capitals.append(new_list)
 #         return countries_and_capitals
 #
-# def create_country_list():
-#     country_and_capitals= open_file()
-#     countries = []
-#     i =0
-#     for country in country_and_capitals:
-#         countries.append(country_and_capitals[i][0].removesuffix(" "))
-#         i+=1
-#     return countries
-#     print(countries)
-#
-# def create_capital_list():
-#     country_and_capitals = open_file()
-#     capitals = []
-#     i =0
-#     for capital in country_and_capitals:
-#         capitals.append(country_and_capitals[i][1].removeprefix(" ").replace("\n", ""))
-#         i +=1
-#     return capitals
-#     print(capitals)
+# 
 
 # def choose_difficulty_level():
 #     while True:
