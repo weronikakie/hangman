@@ -1,0 +1,101 @@
+
+def open_list_of_countries_and_capitals():
+    countries_and_capitals = open ("countries", "r")
+    if countries_and_capitals.readable():
+        list = countries_and_capitals.read()
+        return list
+
+
+
+# print(open_list_of_countries_and_capitals())
+
+
+def create_countries_list():
+    countries_list = []
+    for country in open_list_of_countries_and_capitals():
+        country = open_list_of_countries_and_capitals().split ("| ")
+        countries_list = country[0]
+    print (countries_list)
+
+print (create_countries_list())
+
+def create_captials_list():
+    for lines in open_list_of_countries_and_capitals():
+        capital = open_list_of_countries_and_capitals().split ("| ")
+        capitals_list = capital[1]
+    print (capitals_list)
+
+print(create_captials_list())
+#
+# def open_file():
+#     countries_and_capitals = []
+#     with open(countries_and_capitals) as file:
+#         for argument in file.readlines():
+#             new_list = list(argument.split("|"))
+#             countries_and_capitals.append(new_list)
+#         return countries_and_capitals
+#
+# def create_country_list():
+#     country_and_capitals= open_file()
+#     countries = []
+#     i =0
+#     for country in country_and_capitals:
+#         countries.append(country_and_capitals[i][0].removesuffix(" "))
+#         i+=1
+#     return countries
+#     print(countries)
+#
+# def create_capital_list():
+#     country_and_capitals = open_file()
+#     capitals = []
+#     i =0
+#     for capital in country_and_capitals:
+#         capitals.append(country_and_capitals[i][1].removeprefix(" ").replace("\n", ""))
+#         i +=1
+#     return capitals
+#     print(capitals)
+
+# def choose_difficulty_level():
+#     while True:
+#         level = input ("Choose level: Easy (1) Medium (2) Hard (3)\n")
+#         if is_level_valid(level):
+#             return level
+#         else:
+#             if not is_level_valid:
+#                 return None
+#             print("Choose a valid level!")
+#
+# create_capital_list()
+# create_country_list()
+#
+# def is_level_valid(level):
+#     difficulty_level = ("1", "2", "3")
+#     return level in difficulty_level
+#
+# # def lives_number():
+# #     if choose_difficulty_level() == "1":
+# #         lives = 7
+# #     elif choose_difficulty_level() == "2":
+# #         lives = 5
+# #     elif choose_difficulty_level() == "3":
+# #         lives = 3
+# #     return lives
+# #     print (f"ilosc zyc to {lives}")
+#
+# # choose_difficulty_level()
+#
+# def choose_country_or_capital():
+#     while True:
+#         country_or_capital = input("Choose category: \ncountries (1) \ncapitals (2)\n")
+#         if is_category_valid(country_or_capital):
+#             return country_or_capital
+#         else:
+#             if not is_category_valid:
+#                 return None
+#             print("Choose valid category!")
+#
+# def is_category_valid(country_or_capital):
+#     category = ("1", "2")
+#     return country_or_capital in category
+
+# choose_country_or_capital()
